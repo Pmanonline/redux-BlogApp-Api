@@ -5,7 +5,7 @@
   "description": "User Authentication workflow made with the MERN stack",
   "main": "index.js",
   "scripts": {
-    "start": "node server",
+    "start": "node index.js",
     "server": "nodemon server"
   },
   "repository": {
