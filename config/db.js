@@ -1,8 +1,8 @@
 // database connection file to MongoDB
 import { mongoose } from "mongoose";
 const MONGO_URI =
-  // "mongodb+srv://firstCRUD:w3schools.com@crud.zgveazn.mongodb.net/?retryWrites=true&w=majority";
-  "mongodb://127.0.0.1:27017/myDatabase";
+  "mongodb+srv://firstCRUD:w3schools.com@crud.zgveazn.mongodb.net/?retryWrites=true&w=majority";
+// "mongodb://127.0.0.1:27017/myDatabase";
 
 const connectDB = async () => {
   try {
@@ -13,7 +13,7 @@ const connectDB = async () => {
     // Set 'strictQuery' to 'false' to prepare for Mongoose 7
 
     mongoose.set("strictQuery", false);
-    console.log(`mongodb connected: ${conn.connection.host}`.cyan.underline);
+    console.log(`mongodb is connected: ${conn.connection.host}`.cyan.underline);
   } catch (error) {
     console.log(`Error: ${error.message}`.underline.bold);
     process.exit(1);
