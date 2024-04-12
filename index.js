@@ -138,7 +138,7 @@ app.use(express.json());
 // CORS
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://rekoda-app.vercel.app"],
+    origin: "http://localhost:3000",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
